@@ -1,1 +1,28 @@
 /* The CSS codes go here */
+body {
+    height: 100vh;
+    margin:0;
+    padding:0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.header {
+    grid-column: 2/6;
+    grid-row: 1/2;
+    background-color: grey;
+}
+
+.nav {
+    grid-column: 1/2;
+    grid-row: 1/7;
+    background-color: antiquewhite;
+}
+
+.content {
+    grid-column: 2/6;
+    grid-row: 2/7;
+    background-color: beige;
+}
+
