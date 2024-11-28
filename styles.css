@@ -59,7 +59,7 @@ body {
 
 .top-header input:focus {
     transition: border 0.3s ease; /* Add transition for smooth effect */
-    border: 2px solid rgb(43, 128, 255); /* Change border color on focus */
+    border: 2px solid rgba(43, 128, 255); /* Change border color on focus */
     outline: none; /* Remove the default outline */
 }
 
@@ -122,6 +122,23 @@ body {
     font-size: 20px;
 }
 
+.buttons button {
+    padding:8px 13px;
+    margin-left: 32px;
+    border-radius: 18px;
+    border: 1px solid white;
+    width: 6em;
+    background-color: #0ea5e9;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border 0.3s ease; /* Smooth transition for background and border */
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.buttons button:hover {
+    background-color: rgba(61, 194, 255);
+}
 
 
 
@@ -129,7 +146,7 @@ body {
 .nav {
     grid-column: 1/2;
     grid-row: 1/7;
-    background-color: #0ea5e9;
+    background-color: #17a6e9;
     display: flex;
     flex-direction: column;
     gap: 45px;
