@@ -12,11 +12,63 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+
+
+/* Header  */
 .header {
     grid-column: 2/7;
     grid-row: 1/2;
-    background-color: grey;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
 }
+
+.top-header {
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 8px 50px;
+}
+
+.top-header svg {
+    height: 1.8em;
+    margin-right: 5px;
+    fill: black;
+    vertical-align: middle; /* Aligns text with SVG */
+}
+
+.sbg-button {
+    background: none; /* Remove background color */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+    cursor: pointer; /* Change cursor to pointer */
+    outline: none; /* Remove outline on focus */
+}
+
+.top-header input {
+    width: 500px;
+    padding: 8px; /* Add left padding for SVG icon */
+    font-size: 13px;
+    border-radius: 15px;
+    border: 2px solid rgba(118, 118, 118, 0.2);
+    transition: border 0.3s ease; /* Add transition for smooth effect */
+}
+
+.top-header input:focus {
+    transition: border 0.3s ease; /* Add transition for smooth effect */
+    border: 2px solid rgb(43, 128, 255); /* Change border color on focus */
+    outline: none; /* Remove the default outline */
+}
+
+
+
+.header .bottom-header {
+    grid-row: 2/4
+}
+
+
 
 /* Navbar  */
 .nav {
