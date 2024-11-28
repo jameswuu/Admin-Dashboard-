@@ -28,6 +28,7 @@ body {
     gap: 45px;
     padding: 1em;
     align-items: flex-start;
+
 }
 
 .nav .dashboard {
@@ -36,6 +37,12 @@ body {
     font-weight: bold;
 }
 
+.dashboard  svg{
+    height: 1.8em;
+    width: 1.8em;
+    fill: white;
+    vertical-align: middle; /* Aligns text with SVG */
+}
 
 .list li{
     margin:15px 0;
@@ -48,6 +55,13 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.table .list li svg {
+    height: 1.5em;
+    margin-right: 18px;
+    fill: white;
+    vertical-align: middle; /* Aligns text with SVG */
 }
 
 
