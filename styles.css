@@ -218,8 +218,8 @@ ul {
 
 .card{
     display: grid;
-    gap: 35px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
 }
 
 
