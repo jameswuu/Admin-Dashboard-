@@ -215,7 +215,15 @@ ul {
 }
 
 /* Card CSS */
-.card {
+
+.card{
+    display: grid;
+    gap: 35px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+.card-item {
     background-color: white;
     border-left: 8px solid rgba(43, 128, 255, 0.5);
     border-radius: 10px;
@@ -229,24 +237,24 @@ ul {
     justify-content: space-between;
 }
 
-.card .card-header{
+.card-item .card-header{
     font-weight: 600;
     font-size: 18px;
 }
 
-.card .card-content{
+.card-item .card-content{
     font-weight: 300;
     font-size: 15px;
 }
 
-.card .icons {
+.card-item .icons {
     align-self: flex-end;
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.card .icons svg {
+.card-item .icons svg {
     height: 1.8em;
     fill: grey;
     transition: fill 0.3s ease; /* Add transition for smooth effect */
