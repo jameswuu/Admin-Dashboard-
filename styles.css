@@ -3,7 +3,7 @@
 
 /* The CSS codes go here */
 body {
-    height: 100vh;
+    height: 130vh;
     margin:0;
     padding:0;
     display: grid;
@@ -31,7 +31,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items:center;
-    padding: 8px 50px;
+    padding: 5px 50px;
 }
 
 .top-header svg {
@@ -94,7 +94,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items:center;
-    padding: 8px 50px;
+    padding: 5px 50px;
 }
 
 .big-profile {
@@ -200,7 +200,7 @@ ul {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
-    padding: 20px;
+    padding: 20px 30px;
 }
 
 .content-headings {
@@ -215,13 +215,11 @@ ul {
 }
 
 /* Card CSS */
-
 .card{
     display: grid;
     grid-gap: 2em;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
 }
-
 
 .card-item {
     background-color: white;
@@ -265,14 +263,24 @@ ul {
     outline: none; /* Remove the default outline */
 }
 
-
-
-
-
+/* Content's announcement */
 .content .announcements {
     grid-column: 4/5;
     grid-row: 1/2;
 } 
+
+.box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgb(128, 128, 128, 0.5);
+    height: 300px;
+    padding: 25px
+}
+
+.announcement-content {
+    padding: 8px 0px;
+    border-bottom: 2px solid rgba(128,128,128,0.6);
+}
 
 .content .trendings {
     grid-column: 4/5;
